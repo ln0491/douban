@@ -40,8 +40,13 @@ def getMovieUrl(category, location,form='电影',sort='S',range='9,10'):
 
     return  reueqst_url
 
-
-
+ 
+'''
+简单 写法
+def get_movie_url(category, location):
+    url = "https://movie.douban.com/tag/#/?sort=S&range=9,10&tags=电影,{},{}".format(category,location)
+    return url
+'''
 '''
 https://movie.douban.com/tag/#/: 豆瓣电影分类页面
 sort=S: 按评分排序
